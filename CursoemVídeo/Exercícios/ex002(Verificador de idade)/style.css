@@ -1,0 +1,30 @@
+body{
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+.container{
+    background: white;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+#copy{
+    text-align: center;
+    color: white;
+}
+
+#result{
+    border: 1px solid black;
+}
+
+#img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+
+}
