@@ -1,9 +1,9 @@
 function carregar(){
-    var agora = new Date()
-    var hora = agora.getHours()
-    var resp = window.document.getElementById('agora')
-    var img = window.document.getElementById('img')
-    resp.innerHTML = `Agora são ${hora} horas.`
+    var agora = new Date() // pegar data atual
+    var hora = agora.getHours()  // pegar hora
+    var resp = window.document.getElementById('agora') // pegar a div agora para mostrar a resposta
+    var img = window.document.getElementById('img') //pegar a div com id imagem
+    resp.innerHTML = `Agora são ${hora} horas.` // mostrar a hora
 
     if(hora < 12 && hora > 0){ //manha
         img.src = 'manhã.jpg'
