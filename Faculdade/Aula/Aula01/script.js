@@ -30,7 +30,7 @@
 valor1 = parseInt(prompt('Digite o valor 1'))
 valor2 = parseFloat(prompt('Digite o valor 2'))
 valor3 = Number(prompt('Digite o valor 3'))
-valor4 = +(prompt('Digite o valor 4'))
+valor4 =+ (prompt('Digite o valor 4'))
 
 soma = valor1 + valor2 + valor3 + valor4
 document.write('<br>A soma é = ' + soma)
