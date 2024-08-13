@@ -16,15 +16,15 @@ function contar(){
         if(numInicio < numFim){
             res.innerHTML = 'Contando <br><br>'
             for(numInicio; numInicio <= numFim; numInicio+=numPasso){
-                res.innerHTML += ` ${numInicio} ->`
+                res.innerHTML += ` ${numInicio} \u{1F449}`
             }
-            res.innerHTML += ' Fim.'
+            res.innerHTML += ' Fim\u{1F3C1}'
         } else if(numInicio > numFim){
             res.innerHTML = 'Contando <br><br>'
             for(numInicio; numInicio >= numFim; numInicio-=numPasso){
-                res.innerHTML += ` ${numInicio} ->`
+                res.innerHTML += ` ${numInicio} \u{1F449}`
             }
-            res.innerHTML += ' Fim.'
+            res.innerHTML += ' Fim\u{1F3C1}'
         }    
     } 
 }
