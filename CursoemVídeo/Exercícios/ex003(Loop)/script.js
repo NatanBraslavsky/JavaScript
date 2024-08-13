@@ -7,7 +7,7 @@ function contar(){
     var numPasso = Number(passo.value)
     var res = document.querySelector('div#res')
 
-    if(passo.value.length == 0){
+    if(passo.value.length == 0 || numPasso == 0){
         numPasso = 1
     }
     if(numPasso <= 0 || inicio.value.length == 0 || fim.value.length == 0){
