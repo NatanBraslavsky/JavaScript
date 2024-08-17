@@ -3,7 +3,7 @@ let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
 let valores = []
 
-function isNumero(n) {
+function isNumero(n) { //função pra verificar se é um número
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -11,7 +11,7 @@ function isNumero(n) {
     }
 }
 
-function inLista(n, l) {
+function inLista(n, l) { //função pra verificar se existe o numero digitado no vetor
     if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
@@ -19,7 +19,7 @@ function inLista(n, l) {
     }
 }
 
-function adicionar() {
+function adicionar() { //função pra adicionar o número na lista
     if(isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value))
         let item = document.createElement('option')
@@ -33,7 +33,7 @@ function adicionar() {
     num.focus()
 }
 
-function finalizar() {
+function finalizar() { //função que finaliza a resposta
     if(valores.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else {
