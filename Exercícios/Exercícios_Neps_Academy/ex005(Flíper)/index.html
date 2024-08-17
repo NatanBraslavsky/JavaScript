@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .cont{
+            display: block;
+            width: fit-content;
+            margin: auto;
+        }
+        #bt{
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .res{
+            width: fit-content;
+            margin: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Controle o percurso da bolinha mudando a posição de algumas portinhas do labirinto. Cada portinha pode estar na posição 0, que significa virada para a esquerda, ou na posição 1 que quer dizer virada para a direita. Considere o flíper da figura abaixo, que tem duas portinhas.</p>
+    <div class="cont">
+        <img src="Screenshot 2024-08-16 233845.png" alt="">
+    </div>
+    <div class="inp">
+        <p>Digite o valor de P(0 ou 1): <input type="number" name="P1" id="P1"></p>
+        <p>Digite o valor de R(0 ou 1): <input type="number" name="R1" id="R1"></p>
+        <input type="button" value="Verificar" id="bt" onclick="verificar()">
+        <div class="res">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
