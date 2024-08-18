@@ -10,7 +10,7 @@ function contar(){
     if(passo.value.length == 0 || numPasso == 0){
         numPasso = 1
     }
-    if(numPasso <= 0 || inicio.value.length == 0 || fim.value.length == 0){
+    if(numPasso <= 0 || inicio.value.length == 0 || fim.value.length == 0 || numInicio == numFim){
         res.innerHTML = 'Valor inválido'
     } else {
         if(numInicio < numFim){
