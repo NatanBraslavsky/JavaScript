@@ -8,4 +8,3 @@ function fatorial(n){
 
 let res = fatorial(5)
 console.log(res)
-
