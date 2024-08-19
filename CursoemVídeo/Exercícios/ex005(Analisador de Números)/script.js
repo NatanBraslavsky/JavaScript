@@ -1,7 +1,7 @@
 let num = document.querySelector('input#fnum')
 let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
-let valores = []
+let vetores = []
 
 function isNumero(n) { //função pra verificar se é um número
     if(Number(n) >= 1 && Number(n) <= 100) {
@@ -20,8 +20,8 @@ function inLista(n, l) { //função pra verificar se existe o numero digitado no
 }
 
 function adicionar() { //função pra adicionar o número na lista
-    if(isNumero(num.value) && !inLista(num.value, valores)) {
-        valores.push(Number(num.value))
+    if(isNumero(num.value) && !inLista(num.value, vetores)) {
+        vetores.push(Number(num.value))
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado`
         lista.appendChild(item)
@@ -34,21 +34,21 @@ function adicionar() { //função pra adicionar o número na lista
 }
 
 function finalizar() { //função que finaliza a resposta
-    if(valores.length == 0) {
+    if(vetores.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else {
-        let tot = valores.length
-        let maior = valores[0]
-        let menor = valores[0]
+        let tot = vetores.length
+        let maior = vetores[0]
+        let menor = vetores[0]
         let soma = 0
         let media = 0
-        for(let pos in valores) {
-            soma += valores[pos]
-            if (valores[pos] > maior) {
-                maior = valores[pos]
+        for(let pos in vetores) {
+            soma += vetores[pos]
+            if (vetores[pos] > maior) {
+                maior = vetores[pos]
             }
-            if (valores[pos] < menor) {
-                menor = valores[pos]
+            if (vetores[pos] < menor) {
+                menor = vetores[pos]
             }
         }
         media = soma / tot
