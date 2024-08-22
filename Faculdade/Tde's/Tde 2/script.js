@@ -72,11 +72,54 @@
 
 //Número 6
 
-var qtdHoras = +(prompt('Digite suas horas trabalhadas'))
-var valorHoras = +(prompt('Digite o valor das horas: '))
-if(qtdHoras > 40 ){
-    var valorMais = valorHoras * 1.5 * qtdHoras
-    document.write(`Você recebera ${valorMais}`)
+// var qtdHoras = +(prompt('Digite suas horas trabalhadas'))
+// var valorHoras = +(prompt('Digite o valor das horas: '))
+// if(qtdHoras > 40 ){
+//     var valorMais = valorHoras * 1.5 * qtdHoras
+//     document.write(`Você recebera ${valorMais}`)
+// } else{
+//     document.write(`Você recebera ${qtdHoras * valorHoras}`)
+// }
+
+
+
+
+//Número 7
+
+// var n1 = +prompt('Digite um número: ')
+// var n2 = +prompt('Digite um número: ')
+// var n3 = +prompt('Digite um número: ')
+// var lista = [n1, n2, n3]
+// var maior = Math.max(...lista)
+// document.write(`O maior é o ${maior}`)
+
+
+
+
+
+//Número 8
+
+// var nome = prompt('Digite seu nome: ')
+// var senha = +(prompt('Digite sua senha: '))
+// if(nome == 'admin' && senha == 1234){
+//     document.write('Login bem-sucedido.')
+// } else {
+//     document.write('Usuário ou senha incorretos.')
+// }
+
+
+
+
+//Número 9
+
+var distancia = +(prompt('Digite a distância em km: '))
+var transporte = prompt('Digite o transporte que deseja: ')
+if(transporte == 'carro'){
+    document.write(`Você chegara em ${(distancia / 80).toFixed(2)} horas`)
+} else if(transporte == 'ônibus'){
+    document.write(`Você chegara em ${(distancia / 60).toFixed(2)} horas. `)
+} else if(transporte == 'avião'){
+    document.write(`Você chegará em ${(distancia / 800).toFixed(2)} horas.`)
 } else{
-    document.write(`Você recebera ${qtdHoras * valorHoras}`)
+    document.write('Digite um transporte existente. ')
 }
