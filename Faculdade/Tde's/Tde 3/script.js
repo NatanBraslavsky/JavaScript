@@ -23,8 +23,9 @@
 //         document.write('Valor invalido')
 // }
 
+//-------------------------------------------------------------------------
 
-//ex002
+//ex002 e ex003
 // var valor = +(prompt('Digite o valor total da compra'))
 // var codigo = +(prompt('codigo:'))
 // var valorFinal = 0
@@ -56,6 +57,7 @@
 
 // document.write(valorFinal)
 
+//-------------------------------------------------------------------------
 
 //ex004
 // var conceito = prompt('Digite o conceito')
@@ -81,6 +83,7 @@
 //         break
 // }
 
+//-------------------------------------------------------------------------
 
 //ex005
 // var letra = prompt('Digite a letra')
@@ -105,6 +108,7 @@
 //         document.write('Consoante')
 // }
 
+//-------------------------------------------------------------------------
 
 //ex006
 // var lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -114,6 +118,7 @@
 //     }
 // }
 
+//-------------------------------------------------------------------------
 
 //ex007
 // for(let i = 0; i == 0;){
@@ -126,6 +131,7 @@
 //     }
 // }
 
+//-------------------------------------------------------------------------
 
 //ex008
 // for(let i = 0; i == 0;){
@@ -139,6 +145,7 @@
 //     }
 // }
 
+//-------------------------------------------------------------------------
 
 //ex009
 // var num = []
@@ -154,6 +161,7 @@
 // document.write(`<br>Máximo: ${max}`)
 // document.write(`<br>Soma: ${soma}`)
 
+//-------------------------------------------------------------------------
 
 //ex010
 // for(let i = 0; i == 0;){
@@ -168,7 +176,7 @@
 // }
 // document.write(`Media de alunos por turma: ${media}`)
 
-
+//-------------------------------------------------------------------------
 
 //ex011
 // function porcent(x, y){
@@ -180,7 +188,7 @@
 // var porcentagem = +(prompt('Digite a porcentagem: '))
 // document.write(`${porcentagem}% de ${num} = ${porcent(num, porcentagem)}`)
 
-
+//-------------------------------------------------------------------------
 
 //ex012
 // function conversor(c){
@@ -189,7 +197,54 @@
 // var celsius = +(prompt('Digite os graus em celsius para converter em fahrenheit'))
 // document.write(`${celsius} Celsius em fahrenheit é: ${conversor(celsius)}`)
 
+//-------------------------------------------------------------------------
 
 //ex0013
+// var vetor = [0, 1]
+
+// function fibo(n){
+//     for(let i = 2; i < n; i++){
+//         vetor[i] = vetor[i-1] + vetor[i-2]
+//     }
+//     return vetor
+// } 
+// document.write(`Fibonacci ate 10 casas: <br> ${fibo(10)}`)
+//essa é a questao. a de baixo foi so complemento, precisa tirar as duas linhas a cima para testar
 
 
+//firula que nao foi pedido na questao :)
+// var casas = +(prompt('Digite quantas casas deseja ver na fibonacci: '))
+// document.write(`fibonacci com ${casas} casas : <br> ${fibo(casas)}`)
+
+//0 1 1 2 3 5 8 13 21 34
+//0 1 2 3 4 5 6 7  8  9
+// 1 + 0 = 1 + 1 = 2 + 1 = 3 + 2 = 5 + 3 = 8
+
+//recursividade? entendi mas o gpt ajudou
+
+// function fibonacci(n){
+//     if(n <= 1){
+//         return n
+//     } else{
+//         return fibonacci(n-1) + fibonacci(n-2)
+//     }
+// }
+
+// function printar(n){
+//     for(let i = 0; i < n; i++){
+//         document.write(`${fibonacci(i)} `)
+//     }
+// }
+
+// let n = 10
+// document.write(`Os primeiros ${n} números da sequência de FIbonacci são:<br>`)
+// printar(n)
+
+//-------------------------------------------------------------------------
+
+//ex 014
+// function raiz(x){
+//     return Math.floor(Math.sqrt(x, 2))
+// }
+// var num = +(prompt('Digite um Número para saber sua raiz: '))
+// document.write(`Raiz quadrada de ${num} = ${raiz(num)}`)

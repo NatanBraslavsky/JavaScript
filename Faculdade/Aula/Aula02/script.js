@@ -160,8 +160,17 @@ document.write(`<br>O valor de ${x3} arredondado = ${Math.floor(x3)}`)*/
 //random() - gerar numeros aleatórios entre 0 e 1(não incluso) ----------------------
 
 
-document.write(`<br>O numero aleatório é ${Math.random()}`)
-document.write(`<br>O numero aleatório é ${Math.random().toFixed(1)}`)
-document.write(`<br>O numero aleatório é ${(Math.random()* 50) + 1}`)
-x = (Math.random().toFixed(1)*50)
-document.write(`<br>Numero aleatorio: ${x}`)
+// document.write(`<br>O numero aleatório é ${Math.random()}`)
+// document.write(`<br>O numero aleatório é ${Math.random().toFixed(1)}`)
+// document.write(`<br>O numero aleatório é ${(Math.random()* 50) + 1}`)
+// x = (Math.random().toFixed(1)*50)
+// document.write(`<br>Numero aleatorio: ${x}`)
+
+function aleatorio(min, max){
+   return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+var maximo = +(prompt("Digite um número máximo"))
+var minimo = +(prompt("Digite um número mínimo"))
+var numero = aleatorio(minimo, maximo)
+document.write(`Número aleatório gerado entre ${minimo} e ${maximo}: ${numero}`)
