@@ -61,17 +61,44 @@
 // document.write(`${nome} invertido: ${palavraInvertida}`)
 
 
-var nome = prompt("Digite seu nome")
-var maiuscula = nome.toUpperCase()
-var minuscula = nome.toLowerCase()
-document.write(maiuscula)
-document.write('<br>')
-document.write(minuscula)
+// var nome = prompt("Digite seu nome")
+// var maiuscula = nome.toUpperCase()
+// var minuscula = nome.toLowerCase()
+// document.write(maiuscula)
+// document.write('<br>')
+// document.write(minuscula)
 
-var nome = ['Maria', 'Paulo', 'Julia', 'Lucas']
+// var nome = ['Maria', 'Paulo', 'Julia', 'Lucas']
 
-for(let i = 0; i < nome.length; i++){
-    nome[i] = nome[i].toUpperCase()
-}
-document.write('<br>')
-document.write(nome)
+// for(let i = 0; i < nome.length; i++){
+//     nome[i] = nome[i].toUpperCase()
+// }
+// document.write('<br>')
+// document.write(nome)
+
+
+// idade = +(prompt('Digite a sua idade'))
+// var res = (idade >= 18)? 'Maior de idade' : 'Menor de idade'
+// document.write(res)
+
+
+// var num = +(prompt('Digite um numero'))
+// var res = (num % 2 == 0)? 'Par' : 'Ímpar'
+// document.write(res)
+
+
+
+// var nota = +(prompt('Digite a nota do aluno'))
+// var conceito = (nota >= 9) ? 'A' :
+//                 (nota >= 8) ? 'B' :
+//                 (nota >= 7) ? 'C' :
+//                 (nota >= 6) ? 'D' : 'E'
+
+// document.write(conceito)
+
+
+var temp = +(prompt('Digite a temperatura da pessoa: '))
+var saude = (temp < 35) ? 'Hipotermia' :
+            (temp < 37.5) ? 'Normal' :
+            (temp < 39) ? 'Febre' : 'Febre alta'
+document.write(saude)
