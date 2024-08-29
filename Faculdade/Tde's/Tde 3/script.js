@@ -126,6 +126,7 @@
 //     }
 // }
 
+
 //ex008
 // for(let i = 0; i == 0;){
 //     var nome = prompt('Digite seu nome: ')
@@ -168,5 +169,27 @@
 // document.write(`Media de alunos por turma: ${media}`)
 
 
+
+//ex011
+// function porcent(x, y){
+//     var porcent = x * y / 100
+//     return porcent
+// }
+
+// var num = +(prompt('Digite um número: '))
+// var porcentagem = +(prompt('Digite a porcentagem: '))
+// document.write(`${porcentagem}% de ${num} = ${porcent(num, porcentagem)}`)
+
+
+
+//ex012
+// function conversor(c){
+//     return c * 1.8 + 32
+// }
+// var celsius = +(prompt('Digite os graus em celsius para converter em fahrenheit'))
+// document.write(`${celsius} Celsius em fahrenheit é: ${conversor(celsius)}`)
+
+
+//ex0013
 
 
