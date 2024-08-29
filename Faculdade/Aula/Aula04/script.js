@@ -97,8 +97,42 @@
 // document.write(conceito)
 
 
-var temp = +(prompt('Digite a temperatura da pessoa: '))
-var saude = (temp < 35) ? 'Hipotermia' :
-            (temp < 37.5) ? 'Normal' :
-            (temp < 39) ? 'Febre' : 'Febre alta'
-document.write(saude)
+// var temp = +(prompt('Digite a temperatura da pessoa: '))
+// var saude = (temp < 35) ? 'Hitepormia' :
+//             (temp < 37.5) ? 'Narmol' :
+//             (temp < 39) ? 'Frebe' : 'Febre alta'
+// document.write(saude)
+
+
+// var sexo = prompt('Digite F(feminino), M(masculino) ou O(outros)')
+// sexo = sexo.toLowerCase()
+// switch(sexo){
+//     case 'f': 
+//     document.write('Feminino')
+//     break
+
+//     case 'm':
+//     document.write('Masculino')
+//     break
+
+//     case 'o':
+//     document.write('Outros')
+//     break
+
+//     default:
+//     document.write('Opção inválida')
+//     break
+// }
+
+// var temp = +(prompt('Digite a temperatura'))
+// var status = ''
+
+// switch(true){
+//  case(temp < 15):
+//      status = 'Frio' 
+//     break
+//  case(temp >= 15 && temp < 25):
+//      status = 'Agradavel'
+//      break
+
+// }
