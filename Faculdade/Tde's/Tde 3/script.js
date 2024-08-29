@@ -248,3 +248,19 @@
 // }
 // var num = +(prompt('Digite um Número para saber sua raiz: '))
 // document.write(`Raiz quadrada de ${num} = ${raiz(num)}`)
+
+//-------------------------------------------------------------------------
+
+//ex015
+function maior(n1, n2){
+    if(n1 == n2){
+        return  `${n1} e ${n2} são iguais.`
+    } else if(n1 > n2){
+        return `${n1} é maior que ${n2}.`
+    } else{
+        return `${n2} é maior que ${n1}.`
+    }
+}
+var num1 = +(prompt('Digite um número'))
+var num2 = +(prompt('Digite um número'))
+document.write(`${maior(num1, num2)}`)

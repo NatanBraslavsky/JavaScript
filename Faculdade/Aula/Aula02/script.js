@@ -166,11 +166,13 @@ document.write(`<br>O valor de ${x3} arredondado = ${Math.floor(x3)}`)*/
 // x = (Math.random().toFixed(1)*50)
 // document.write(`<br>Numero aleatorio: ${x}`)
 
-function aleatorio(min, max){
-   return Math.floor(Math.random() * (max - min + 1) + min)
-}
 
-var maximo = +(prompt("Digite um número máximo"))
-var minimo = +(prompt("Digite um número mínimo"))
-var numero = aleatorio(minimo, maximo)
-document.write(`Número aleatório gerado entre ${minimo} e ${maximo}: ${numero}`)
+// function aleatorio(min, max){
+//    return Math.floor(Math.random() * (max - min + 1)) + min
+// }
+
+// var maximo = +(prompt("Digite um número máximo"))
+// var minimo = +(prompt("Digite um número mínimo"))
+// var numero = aleatorio(minimo, maximo)
+// document.write(`Número aleatório gerado entre ${minimo} e ${maximo}: ${numero}`)
+
