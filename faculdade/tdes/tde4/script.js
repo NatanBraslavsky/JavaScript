@@ -74,9 +74,42 @@
 
 
 //Número 8
-function palindromo(nom){
-    let invert = nom.split('').reverse().join('')
-    return invert === nom
-}
-nome = prompt('Digite seu nome')
-document.write(palindromo(nome))
+
+// function ehPalindromo(frase){
+//     var invertida = ''
+//     for(let i = frase.length - 1; i>=0; i--){
+//         invertida += frase[i]
+//     }
+//     return invertida === frase
+// }
+
+// let string = prompt('Digite uma palavra.')
+// document.write(ehPalindromo(string))
+
+
+//Número 9
+// function calculadora(n1, n2, ope){
+//     switch (ope){
+//         case '+':
+//             return n1 + n2
+
+//         case '-':
+//             return n1 - n2
+
+//         case '*':
+//             return n1 * n2
+
+//         case '/':
+//             return n1 / n2
+
+//         default:
+//             return 'operador inválido.'
+//     }
+// }
+
+// let num1 = +(prompt('Digite um número: '))
+// let num2 = +(prompt('Digite outro número:'))
+// do{
+//     var operador = prompt('Digite um operador:')
+// } while(operador != '+' && operador != '-' && operador != '*' && operador != '/')
+// document.write(`${num1} ${operador} ${num2} = ${calculadora(num1, num2, operador).toFixed(0)}.`)
