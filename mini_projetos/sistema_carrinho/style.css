@@ -69,13 +69,14 @@ header{
 .carrinho{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     width: 360px;
-    min-height: 100vh;
+    height: 100vh;
     padding: 20px;
     background-color: var(--bg-color);
     box-shadow: -2px 0 4px hsl(0 4% 15% /10%);
     transition: 0.3s;
+    overflow-y: auto;
 }
 
 .carrinho.ativo {
@@ -110,7 +111,8 @@ header{
 }
 
 .carrinho_produto_titulo{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -130,6 +132,7 @@ header{
     font-size: 24px;
     color: var(--main-color);
     cursor: pointer;
+    width: fit-content;
 }
 
 .total{
@@ -231,4 +234,41 @@ header{
 
 .add_cart:hover{
     background-color: hsl(249, 32%, 17%);
+}
+
+@media(max-width: 1080px){
+    .nav{
+        padding: 15px;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .compra{
+        padding: 2rem !important;
+    }
+}
+
+@media(max-width: 400px){
+    .nav{
+        padding: 11px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .carrinho{
+        width: 320px;
+    }
+}
+
+@media(max-width: 360px){
+    .compra{
+        margin-top: 1rem !important;
+    }
+    .carrinho{
+        width: 280px;
+    }
 }

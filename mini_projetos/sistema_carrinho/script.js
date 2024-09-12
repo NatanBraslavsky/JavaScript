@@ -39,6 +39,18 @@ function ready(){
         var botao = addCarrinho[i]
         botao.addEventListener('click', addCarrinhoClicado)
     }
+    //botao de compras
+    document.getElementsByClassName('btn_compra')[0].addEventListener('click', botaoDeCompraClicado)
+}
+
+//botao de compras
+function botaoDeCompraClicado(){
+    alert('Seu pedido foi concluido com sucesso')
+    var carrinhoConteudo = document.getElementsByClassName('carrinho_conteudo')[0]
+    while(carrinhoConteudo.hasChildNodes()){
+        carrinhoConteudo.removeChild(carrinhoConteudo.firstChild)
+    }
+    atualizartotal()
 }
 
 //remove items do carrinho
@@ -80,27 +92,20 @@ function addProdutoAoCarrinho(titulo, preco, imagemProduto){
             return;
         }
     }
+    var carrinhoBoxConteudo = `
+                            <img src="${imagemProduto}" alt="" class="carrinho_img">
+                            <div class="detalhe_box">
+                               <div class="carrinho_produto_titulo">${titulo}</div>
+                               <div class="carrinho_preco">${preco}</div>
+                               <input type="number" value="1" class="carrinho_qtd">
+                            </div>
+                            <!-- Remove carrinho -->
+                            <i class='bx bxs-trash-alt carrinho_remove' ></i>`
+    carrinhoShopBox.innerHTML = carrinhoBoxConteudo
+    carrinhoItems.append(carrinhoShopBox)
+    carrinhoShopBox.getElementsByClassName('carrinho_remove')[0].addEventListener('click', removeCarrinhoItem)
+    carrinhoShopBox.getElementsByClassName('carrinho_qtd')[0].addEventListener('change', quantidadeMudada)
 }
-var carrinhoBoxConteudo = `
-                        <img src="${imagemProduto}" alt="" class="carrinho_img">
-                        <div class="detalhe_box">
-                           <div class="carrinho_produto_titulo">Earbuds</div>
-                           <div class="carrinho_preco">R$25</div>
-                           <input type="number" value="1" class="carrinho_qtd">
-                        </div>
-                        <!-- Remove carrinho -->
-                        <i class='bx bxs-trash-alt carrinho_remove' ></i>`
-carrinhoShopBox.innerHTML = carrinhoBoxConteudo
-carrinhoItems.append(carrinhoShopBox)
-carrinhoShopBox.getElementsByClassName('carrinho_remove')[0].addEventListener('click', removeCarrinhoItem)
-carrinhoShopBox.getElementsByClassName('carrinho_qtd')[0].addEventListener('change', quantidadeMudada)
-
-// cartShopBox
-// .getElementsByClassName("cart-quantity")[0]
-// .addEventListener("change", quantityChanged);
-// }
-
-
 
 //Atualizando total
 function atualizartotal(){
@@ -114,8 +119,8 @@ function atualizartotal(){
         var preco = parseFloat(precoElemento.innerText.replace("R$", ""))
         var quantidade = quantidadeElemento.value
         total = total + (preco * quantidade)
-        total = Math.round(total * 100) / 100
-
-        document.getElementsByClassName('total_preco')[0].innerText = "R$" + total
     }
+    total = Math.round(total * 100) / 100
+
+    document.getElementsByClassName('total_preco')[0].innerText = "R$" + total
 }
