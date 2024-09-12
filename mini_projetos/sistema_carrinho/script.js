@@ -11,7 +11,7 @@ fechadoCarrinho.onclick = () => {
     carrinho.classList.remove("ativo")
 }
 
-//carrijnho funcionando
+//carrinho funcionando
 if(document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded', ready)
 } else{
@@ -64,8 +64,38 @@ function addCarrinhoClicado(event){
     var titulo = shopProdutos.getElementsByClassName('produto_titulo')[0].innerText
     var preco = shopProdutos.getElementsByClassName('preco')[0].innerText
     var imagemProduto = shopProdutos.getElementsByClassName('produto_img')[0].src
-    console.log(titulo,preco, imagemProduto)
+    addProdutoAoCarrinho(titulo, preco, imagemProduto)
+    carrinho.classList.add('ativo')
+    atualizartotal()
 }
+
+function addProdutoAoCarrinho(titulo, preco, imagemProduto){
+    var carrinhoShopBox = document.createElement('div')
+    carrinhoShopBox.classList.add('carrinho_box')
+    var carrinhoItems = document.getElementsByClassName('carrinho_conteudo')[0]
+    var carrinhoItemsNomes = carrinhoItems.getElementsByClassName('carrinho_produto_titulo')
+    for(var i = 0; i < carrinhoItemsNomes.length; i++){
+        if(carrinhoItemsNomes[i].innerText == titulo){
+            alert("Você já adicionou esse produto ao carrinho")
+            return;
+        }
+    }
+}
+var carrinhoBoxConteudo = `
+                        <img src="${imagemProduto}" alt="" class="carrinho_img">
+                        <div class="detalhe_box">
+                           <div class="carrinho_produto_titulo">Earbuds</div>
+                           <div class="carrinho_preco">R$25</div>
+                           <input type="number" value="1" class="carrinho_qtd">
+                        </div>
+                        <!-- Remove carrinho -->
+                        <i class='bx bxs-trash-alt carrinho_remove' ></i>`
+carrinhoShopBox.innerHTML = carrinhoBoxConteudo
+carrinhoItems.append(carrinhoShopBox)
+carrinhoShopBox.getElementsByClassName('carrinho_remove')[0].addEventListener('click', removeCarrinhoItem)
+carrinhoShopBox.getElementsByClassName('carrinho_qtd')[0].addEventListener('change', quantidadeMudada)
+
+
 
 //Atualizando total
 function atualizartotal(){

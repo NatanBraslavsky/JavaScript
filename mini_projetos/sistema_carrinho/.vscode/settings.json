@@ -1,0 +1,28 @@
+{
+    "editor.wordWrap": "on",
+    "window.zoomLevel": 0.5,
+    "editor.lineHeight": 1.8,
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "ú": true,
+        "õ": true,
+        "ç": true,
+        "á": true,
+        "ó": true,
+        "é": true,
+        "ã": true,
+        "•": true
+    },
+    "liveshare.nameTagVisibility": "Never",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 15.1,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.unicodeHighlight.includeComments": false,
+    "explorer.compactFolders": false,
+    "liveServer.settings.port": 5501,
+}
