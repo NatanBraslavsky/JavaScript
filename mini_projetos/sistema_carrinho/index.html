@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de carrinho</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <!-- Nav -->
+         <div class="nav container">
+            <a href="#" class="logo">Ecommerce</a>
+            <!-- Icone -->
+            <i class='bx bx-shopping-bag' id="icone_sacola"></i>
+            <!-- Cart -->
+             <div class="carrinho">
+               <h2 class="carrinho_titulo">Seu carrinho</h2>
+               <!-- Conteudo -->
+               <div class="carrinho_conteudo">
+
+                    <div class="carrinho_box">
+                        <img src="img/product2.jpg" alt="" class="carrinho_img">
+                        <div class="detalhe_box">
+                           <div class="carrinho_produto_titulo">Earbuds</div>
+                           <div class="carrinho_preco">R$25</div>
+                           <input type="number" value="1" class="carrinho_qtd">
+                        </div>
+                        <!-- Remove carrinho -->
+                        <i class='bx bxs-trash-alt carrinho_remove' ></i>
+                    </div>
+                 </div>
+                 <!-- Total -->
+                    <div class="total">
+                        <div class="total_titulo">Total</div>
+                        <div class="total_preco">R$0</div>
+                  </div>
+                  <!-- Buy Button -->
+                   <button type="button" class="btn_compra">Compre Agora</button>
+                   <!-- Fechar Carrinho -->
+                   <i class='bx bx-x' id="fechar_carrinho"></i>
+             </div>
+         </div>
+     </header>
+     <!-- Cards compras -->
+      <section class="compra container">
+        <h2 class="section_titulo">Produtos</h2>
+        <!-- Conteúdo -->
+         <div class="compra_conteudo">
+            <!-- Caixa 1 -->
+            <div class="produto_box">
+               <img src="img/product1.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">BLUSA PRETA</h2>
+               <span class="preco">R$25</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+            <!-- Caixa 2 -->
+            <div class="produto_box">
+               <img src="img/product2.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">FONE SEM FIO</h2>
+               <span class="preco">R$100</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+            <!-- Caixa 3 -->
+            <div class="produto_box">
+               <img src="img/product3.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">CASACO CARGO</h2>
+               <span class="preco">R$55</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+            <!-- Caixa 4 -->
+            <div class="produto_box">
+               <img src="img/product4.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">GARRAFA ESPORTIVA</h2>
+               <span class="preco">R$24.04</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+            <!-- Caixa 5 -->
+            <div class="produto_box">
+               <img src="img/product5.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">ÓCULOS ESPORTIVO</h2>
+               <span class="preco">R$50</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+            <!-- Caixa 6 -->
+            <div class="produto_box">
+               <img src="img/product6.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">BONÉ ABA CURVA</h2>
+               <span class="preco">R$50</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+            <!-- Caixa 7 -->
+            <div class="produto_box">
+               <img src="img/product7.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">MOCHILA ESPORTIVA</h2>
+               <span class="preco">R$70</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+            <!-- Caixa 8 -->
+            <div class="produto_box">
+               <img src="img/product8.jpg" alt="Produto1" class="produto_img">
+               <h2 class="produto_titulo">TÊNIS ESPORTIVO</h2>
+               <span class="preco">R$45</span>
+               <i class='bx bx-shopping-bag add_cart' ></i>
+            </div>
+         </div>
+      </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
