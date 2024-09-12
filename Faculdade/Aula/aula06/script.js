@@ -57,22 +57,40 @@
 
 //Função de ordenação---------------
 
-var pessoa = ['Ana', 'Liz', 'Eva', 'Flora', 'Isabel']
-document.write(`<br>${pessoa}`)
-document.write(`<br>A ordem invertida do array é : ${pessoa.reverse()}`)
+// var pessoa = ['Ana', 'Liz', 'Eva', 'Flora', 'Isabel']
+// document.write(`<br>${pessoa}`)
+// document.write(`<br>A ordem invertida do array é : ${pessoa.reverse()}`)
 
-//sort
+// //sort
 
 
-document.write(`<br>A ordem alfabetica do array é ${pessoa.sort()}`)
+// document.write(`<br>A ordem alfabetica do array é ${pessoa.sort()}`)
 
-//concat()
+// //concat()
 
-var f = [1,2,3,5]
-var g = [6,7,8]
-var concat = f.concat(g)
-document.write(concat.length)
+// var f = [1,2,3,5]
+// var g = [6,7,8]
+// var concat = f.concat(g)
+// document.write(concat)
+// concat.shift()
+// document.write(`<br>${concat}`)
 
-//includes() - verifica se um determinado elemento encontra-se no array
+// //includes() - verifica se um determinado elemento encontra-se no array
 
-document.write(`<br>O numero 2 encontra-se no array? ${f.includes(2)}`)
+// document.write(`<br>O numero 2 encontra-se no array? ${f.includes(2)}`) 
+
+
+
+// var semana = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado', 'domingo']
+
+// var add = semana.splice(1,2,'a','b')
+
+// document.write(`${semana} <br>- > removidos : ${add}`)
+
+var nome = []
+for(let i = 0; i < 5; i++){
+    nome[i] = prompt('Digite seu nome: ')
+}
+document.write(`${nome}`)
+var n = nome.splice(2,0,'ana')
+document.write(`<br>${nome}`)
