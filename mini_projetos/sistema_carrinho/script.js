@@ -95,6 +95,11 @@ carrinhoItems.append(carrinhoShopBox)
 carrinhoShopBox.getElementsByClassName('carrinho_remove')[0].addEventListener('click', removeCarrinhoItem)
 carrinhoShopBox.getElementsByClassName('carrinho_qtd')[0].addEventListener('change', quantidadeMudada)
 
+// cartShopBox
+// .getElementsByClassName("cart-quantity")[0]
+// .addEventListener("change", quantityChanged);
+// }
+
 
 
 //Atualizando total
