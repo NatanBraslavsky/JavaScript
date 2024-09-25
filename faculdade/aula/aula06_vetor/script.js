@@ -10,19 +10,19 @@ document.write(`<br> ${b[2]}`)
 document.write(`<br> ${b[5][1]}`)
 document.write(`<br> ${b[5][2]}`)
 
-//length - verifica o tamanho do array ------------------------
+//!length - verifica o tamanho do array ------------------------
 
 document.write(`<br>O tamanho do array é ${b.length}`)
 
-//indexOf() - identifica a posição do elemento no array -------
+//!indexOf() - identifica a posição do elemento no array -------
 
 document.write(`<br>A posição do elemento a encontra-se na posição : ${b.indexOf('a')}`)
 
-//lastIndexOf() - informa a ultima ocorrência do elemento ------
+//!lastIndexOf() - informa a ultima ocorrência do elemento ------
 
 document.write(`<br>A ultima occotência do elemento é: ${b.lastIndexOf(2)}`)
 
-//Método literal - [] -----------------------------------------
+//!Método literal - [] -----------------------------------------
 
 var c = []
 document.write(`<br> ${c}`)
