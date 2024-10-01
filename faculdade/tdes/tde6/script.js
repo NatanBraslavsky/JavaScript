@@ -1,15 +1,17 @@
-function clique1(){
-    let nome1 = document.getElementById('nome1').value
-    let resp1 = document.getElementById('res1')
-    resp1.innerHTML = `Olá ${nome1}, Seja bem vindo`
-}
+document.getElementById('btn1').addEventListener('click', function(){
+  let nome1 = document.getElementById('nome1').value
+  let resp1 = document.getElementById('res1')
+  resp1.innerHTML = `Olá ${nome1}, Seja bem vindo`
+})
 
-function clique2(){
-    let num1 = +(document.getElementById('num21').value)
-    let num2 = +(document.getElementById('num22').value)
-    let resp2 = document.getElementById('res2')
-    resp2.innerHTML = `${num1} + ${num2} = ${num1 + num2}<br>${num1} * ${num2} = ${num1 * num2}<br>${num1} / ${num2} = ${num1 / num2}<br>${num1} - ${num2} = ${num1 - num2}`
-}
+
+document.getElementById('btn2').addEventListener('click', function(){
+  let num1 = +(document.getElementById('num21').value)
+  let num2 = +(document.getElementById('num22').value)
+  let resp2 = document.getElementById('res2')
+  resp2.innerHTML = `${num1} + ${num2} = ${num1 + num2}<br>${num1} * ${num2} = ${num1 * num2}<br>${num1} / ${num2} = ${num1 / num2}<br>${num1} - ${num2} = ${num1 - num2}`
+})
+
 
 document.getElementById('btn3').addEventListener('click', function(){
     let num13 = +(document.getElementById('num31').value)
@@ -17,7 +19,7 @@ document.getElementById('btn3').addEventListener('click', function(){
     let num33 = +(document.getElementById('num33').value)
     let resp3 = document.getElementById('res3')
     let media = (num13 + num23 + num33) / 3
-    resp3.innerHTML = `A media é: ${media}`
+    resp3.innerHTML = `A media é: ${media.toFixed(2)}`
 })
 
 document.getElementById('btn4').addEventListener('click', function(){
@@ -37,3 +39,12 @@ document.getElementById('btn5').addEventListener('click', function(){
   }
 })
 
+document.getElementById('btn6').addEventListener('click', function(){
+  let num6 = Number(document.getElementById('num6').value)
+  let res6 = document.getElementById('res6')
+  let resultadoFat = 1
+  for(let i = num6; i > 0; i--){
+    resultadoFat *= i
+  }
+  res6.innerHTML = `Fatorial de ${num6} é ${resultadoFat}`
+})
