@@ -33,7 +33,7 @@ document.write(`<br> ${d}`)
 document.write(`<br> ${d[0]}`)
 document.write(`<br> ${d[5][0]}`)
 
-//valores externos -------------------------------------------
+//!valores externos -------------------------------------------
 
 nota =[]
 for(i=0; i<3;i++){
@@ -41,13 +41,13 @@ for(i=0; i<3;i++){
 }
 document.write(`<br> As notas são: ${nota}`)
 
-//string ------------------------------------------------------
+//!string ------------------------------------------------------
 
 nome = 'Thereza'
 document.write(`<br>O tamanho do array é ${nome.length}`)
 document.write(`<br>A posição do elemento no é array ${nome.lastIndexOf('e')}`)
 
-//inserir novos elementos no array -----------------------------
+//!inserir novos elementos no array -----------------------------
 
 var e = [1,2,3,4]
 e[4] = 'Novo valor'
@@ -65,18 +65,18 @@ for(i=0;i<pessoa.length;i++){
 	document.write(`<br>Nome: ${pessoa[i]}`)
 }
 	
-//Função de ordenação------------------------------------------------
+//!Função de ordenação------------------------------------------------
 reverse() - le o array de forma invertida -------------------------
 
 pessoa = ['Ana','Liz','Eva','Flora','Isabel']
 document.write(`<br>${pessoa}`)
 document.write(`<br>A ordem invertida do array é : ${pessoa.reverse()}`)
 
-//sort()- coloca em ordem alfabetica --------------------------------
+//!sort()- coloca em ordem alfabetica --------------------------------
 
 document.write(`<br>A ordem alfabetica do array é: ${pessoa.sort().reverse()}`)
 
-//concat() - concatenar vetores -------------------------------------
+//!concat() - concatenar vetores -------------------------------------
 
 var f = [1,2,3,5]
 var g = [6,7,8]
@@ -84,37 +84,37 @@ var g = [6,7,8]
 document.write(`<br>O vetor concatenado é :${f.concat(g)}`)
 document.write(`<br>O vetor concatenado é :${g.concat(f)}`)
 
-//includes()- verifica se um determinado elemento encontra-se no array
+//!includes()- verifica se um determinado elemento encontra-se no array
 
 document.write(`<br>O numero 2 encontra-se no array? ${f.includes(2)}`)
 document.write(`<br>O numero 12 encontra-se no array? ${f.includes(12)}`)
 
-//push() - adiciona um novo elemento no final do array ---------------
+//!push() - adiciona um novo elemento no final do array ---------------
 
 var h = [10,20,30,40]
 h.push(50)
 
 document.write(`<br>O novo array é: ${h}`)
 
-//pop() - remove o ultimo do elemento do array -------------------------
+//!pop() - remove o ultimo do elemento do array -------------------------
 
 h.pop()
 
 document.write(`<br>O novo array é: ${h}`)
 
-//unshift - adiciona um novo elemento no inicio do array ---------------
+//!unshift - adiciona um novo elemento no inicio do array ---------------
 
 h.unshift(0)
 
 document.write(`<br>O novo array é: ${h}`)
 
-//shift() - remove o primeiro do elemento do array -------------------------
+//!shift() - remove o primeiro do elemento do array -------------------------
 
 h.shift()
 
 document.write(`<br>O novo array é: ${h}`)
 
-//slice() - fatia o array sem alterar o array original ----------------
+//!slice() - fatia o array sem alterar o array original ----------------
 
 aluno = 'Maria da Silva Xavier da Cunha'
 a = aluno.slice(5)
@@ -152,7 +152,7 @@ nome1 = 'Thereza'
 n1 = nome1.slice(-3)
 document.write(`<br>${n1}`)*/
 
-/*splice() - 1º valor: posição
+/*//!/*splice() - 1º valor: posição
 			 2º valor: quantidade de elementos excluidos
 			 3º valor: novos elementos 
 			 
@@ -179,20 +179,20 @@ document.write(`<br>Nome: ${nome}`)*/
 
 //Função anonima - não possui nome, atribui-se a função a uma variavel
 
-var msg = function(){
-	return `Olá!Bom dia!`
-}
-document.write(`<br>${msg()}`)
-//---------------------------------------
-var msg1 = function(){
-	return `Olá ${nome}!Bom dia!`
-}
-nome = prompt('Digite o seu nome')
-document.write(`<br>${msg1()}`)
-//---------------------------------------
+// var msg = function(){
+// 	return `Olá!Bom dia!`
+// }
+// document.write(`<br>${msg()}`)
+// //---------------------------------------
+// var msg1 = function(){
+// 	return `Olá ${nome}!Bom dia!`
+// }
+// nome = prompt('Digite o seu nome')
+// document.write(`<br>${msg1()}`)
+// //---------------------------------------
 
-num = function(numero){
-	return numero ** 2
-}
-numero = +(prompt('Digite um numero'))
-document.write(`<br>${num(numero)}`)
+// num = function(numero){
+// 	return numero ** 2
+// }
+// numero = +(prompt('Digite um numero'))
+// document.write(`<br>${num(numero)}`)
