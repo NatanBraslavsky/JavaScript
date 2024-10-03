@@ -22,7 +22,7 @@ document.querySelector('#input2').addEventListener('keydown',function(event){
 		event.preventDefault() //previnir a quebra de linha
 		alert('Tecla enter foi pressionada,mas a ação foi previnida')
 	}
-	})
+})
 //!arrow function --------------------------------------------------------
 
 document.querySelector('#input2').addEventListener('keydown',(event)=>{
@@ -30,7 +30,7 @@ document.querySelector('#input2').addEventListener('keydown',(event)=>{
 		event.preventDefault() //previnir a quebra de linha
 		alert('Tecla enter foi pressionada,mas a ação foi previnida')
 	}
-	})
+})
 
 //!Exemplo 3 - Verificando se as teclas são numericas --------------------
 
