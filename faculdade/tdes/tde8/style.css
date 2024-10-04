@@ -1,3 +1,42 @@
+.containernum1{
+    width: 500px;
+    height: fit-content;
+    padding-bottom: 20px;
+    background-color: rgb(35, 35, 148);
+    color: white;
+    margin: auto;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#res1{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#resetar{
+    background-color: rgb(35, 35, 148);
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    font-size: 1em;
+    font-weight: 100;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+#resetar:hover{
+    color: rgb(111, 255, 111);
+    border:1px solid rgb(111, 255, 111);
+}
+
 #resq4{
     font-size: 5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
