@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(192, 255, 255);
+}
+.elemento{
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgb(240, 80, 80);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+}
+
+.abs{
+    position: absolute;
+    cursor: grab;
+}
