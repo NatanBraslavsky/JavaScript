@@ -20,7 +20,7 @@
 // if(amaliaIdade > joaquimIdade){
 // 	nomeMaisVelho = 'Amalia'
 // } else if(amaliaIdade == joaquimIdade){
-// 	nomeMaisVelho = 'idades iguais'
+// 	nomeMaisVelho = 'Idades iguais'
 // } else{
 // 	nomeMaisVelho = 'Joaquim'
 // }
@@ -47,22 +47,42 @@
 
 
 
-let sorteados = []
-for(let i = 0; i < 6; i++){
-    sorteados[i] = Math.floor(Math.random()*60)
-}
+// let sorteados = []
+// for(let i = 0; i < 6; i++){
+//     sorteados[i] = Math.floor(Math.random()*60)
+// }
 
-let escolhidos = []
-for(let i = 0; i < 6; i++){
-    escolhidos[i] = +(prompt('Escolha um valor: '))
+// let escolhidos = []
+// for(let i = 0; i < 6; i++){
+//     escolhidos[i] = +(prompt('Escolha um valor: '))
+// }
+// let qtdAcertos = 0
+// for(let j = 0; j < 6; j++){
+//     for(let i = 0; i < 6; i++){
+//         if(escolhidos[j] == sorteados[i]){
+//             qtdAcertos++
+//         }
+//     }
+// }
+// alert('Números sorteados: ' + sorteados + ' Quantidade de acertos: ' + qtdAcertos)
+// alert('As chances de você acertar é de : ' + (1/Math.pow(60,6)))
+
+
+
+
+let distancia = +(prompt('Digite a distância em quilômetros: '))
+let custo
+switch(true){
+	case (distancia <= 100):
+		custo = distancia * 10
+		break
+	case (distancia > 100 && distancia <= 300):
+		custo = distancia * 8
+		break
+	case(distancia > 300):
+		custo = distancia * 5
+		break
+	default:
+		console.log('Quilômetragem inválida.')
 }
-let qtdAcertos = 0
-for(let j = 0; j < 6; j++){
-    for(let i = 0; i < 6; i++){
-        if(escolhidos[j] == sorteados[i]){
-            qtdAcertos++
-        }
-    }
-}
-alert('Números sorteados: ' + sorteados + ' Quantidade de acertos: ' + qtdAcertos)
-alert('As chances de você acertar é de : ' + (1/Math.pow(60,6)))
+alert(`O custo de envio é de R$ ${custo}`)
