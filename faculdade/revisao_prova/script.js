@@ -1,0 +1,68 @@
+// let alturaMedia = 1.70
+// let pesoMedia = 70
+// let imc = pesoMedia / Math.pow(alturaMedia, 2)
+// alert(`IMC medio: ${imc}.toFixed(2)`)
+
+
+
+// let anos = +(prompt('Digite a quantos anos você fuma: '))
+// let cigarros = +(prompt('Digite a quantos cigarros você fuma por dia: '))
+// let cartela = +(prompt('Digite o preço da cartela: '))
+// let qtdCartelaPorDia = cigarros / 20
+// let anosEmDias = anos * 365
+// let calculo = qtdCartelaPorDia * cartela * anosEmDias
+// alert(`Você gastou: R$${calculo}`)
+
+
+// let nomeMaisVelho
+// let amaliaIdade = +(prompt('Idade de Amalia:' ))
+// let joaquimIdade= +(prompt('Idade de Joaquim:' ))
+// if(amaliaIdade > joaquimIdade){
+// 	nomeMaisVelho = 'Amalia'
+// } else if(amaliaIdade == joaquimIdade){
+// 	nomeMaisVelho = 'idades iguais'
+// } else{
+// 	nomeMaisVelho = 'Joaquim'
+// }
+// alert('Nome do mais velho: '+ nomeMaisVelho)
+
+
+
+// function morreu(dano, saude){
+// 	let dead = false
+// 	if(dano >= saude){
+// 		dead = true
+// }
+// return dead
+// }
+
+// let dano = +(prompt('Dano que tomou: '))
+// let saude = +(prompt('Saúde total: '))
+// let estado = morreu(dano, saude)
+// if(estado){
+// 	alert('Morreu')
+// } else{
+// 	alert('Viveu')
+// }
+
+
+
+let sorteados = []
+for(let i = 0; i < 6; i++){
+    sorteados[i] = Math.floor(Math.random()*60)
+}
+
+let escolhidos = []
+for(let i = 0; i < 6; i++){
+    escolhidos[i] = +(prompt('Escolha um valor: '))
+}
+let qtdAcertos = 0
+for(let j = 0; j < 6; j++){
+    for(let i = 0; i < 6; i++){
+        if(escolhidos[j] == sorteados[i]){
+            qtdAcertos++
+        }
+    }
+}
+alert('Números sorteados: ' + sorteados + ' Quantidade de acertos: ' + qtdAcertos)
+alert('As chances de você acertar é de : ' + (1/Math.pow(60,6)))
