@@ -1,19 +1,19 @@
 /*
 !Função every() - verifica se todods os elementos atendem as condições
-
 nome = ['Thereza','Eva','Flora','Liz']
 function n(elem){
 	return (typeof elem == 'string')
 }
-document.write(`<br>Todos os elementos são do tipo string? ${nome.every(n)}`)
-
+console.log(`<br>Todos os elementos são do tipo string? ${nome.every(n)}`)
+*/
 //--------------------------------------------------
 
 var numeros = [2,4,6,8,10]
 pares = numeros.every(function(numero){
 	return numero %  2 == 0
 })
-
+console.log(pares)
+/*
 
 //----------------------------------------------------------
 m = numeros.every(function(n){
@@ -63,7 +63,7 @@ soma = numeros3.reduce(function(t,n){
 })
 document.write(`<br>A soma de todos os elemntos do vetor é ${soma}`)
 
-/*--------------------Matéria da AV1 -------------------------*/
+/*--------------------Matéria da AV1 -------------------------
 
 var corpo = document.body
 corpo.style.background='rgb(67,120,190)'

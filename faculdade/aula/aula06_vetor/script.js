@@ -114,14 +114,14 @@ h.shift()
 
 document.write(`<br>O novo array é: ${h}`)
 
-//!slice() - fatia o array sem alterar o array original ----------------
+//!slice() - fatia o array sem alterar o array original ----------------*/
 
-aluno = 'Maria da Silva Xavier da Cunha'
-a = aluno.slice(5)
-document.write(`<br>${a}`)
-a1 = aluno.slice(5,14)
-document.write(`<br>${a1}`)
-
+// aluno = 'Maria da Silva Xavier da Cunha'
+// a = aluno.slice(5)
+// console.log(`<br>${a}`)
+// a1 = aluno.slice(5,14)
+// console.log(`<br>${a1}`)
+/*
 carro = ['Jeta','Fiat','Focus','Cruze','Corolla','Civic','Elantra']
 c = carro.slice(2)
 document.write(`<br>${c}`)
@@ -152,15 +152,16 @@ nome1 = 'Thereza'
 n1 = nome1.slice(-3)
 document.write(`<br>${n1}`)*/
 
-/*//!/*splice() - 1º valor: posição
+/*//!/*splice() 
+			 1º valor: posição
 			 2º valor: quantidade de elementos excluidos
 			 3º valor: novos elementos 
-			 
+			 */
 d = ['Segunda','Terça','Quarta']
-d1 = d.splice(1,1)
-document.write(`<br>${d1}`)
-document.write(`<br>${d}`)
-
+d1 = d.splice(1,2, 'Quinta')
+console.log(` Removidos: ${d1}`)
+console.log(` Final: ${d}`)
+/*
 d2 = d.splice(1,1,'Quinta','Sexta')
 document.write(`<br>${d2}`)
 document.write(`<br>${d}`)

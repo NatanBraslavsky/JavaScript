@@ -6,14 +6,14 @@ b = Math.trunc(a)
 document.write(`A parte inteira do numero ${a} = ${b}`)
 document.write(`A parte inteira do numero ${a} = ${Math.trunc(a)}`)
 
-//max() - busca o maior valor da lista ----------------------------
+//!max() - busca o maior valor da lista ----------------------------
 
 c = [4,5,8,9,0,88,-10,25]
 d = Math.max(...c)
 
 document.write(`<br>O  maior valor da lista é ${d}`)
 
-//min() - busca o menor valor da lista -----------------------------
+//!min() - busca o menor valor da lista -----------------------------
 
 e = Math.min(...c)
 document.write(`<br>O  menor valor da lista é ${e}`)

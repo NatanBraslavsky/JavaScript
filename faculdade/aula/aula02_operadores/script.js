@@ -157,7 +157,7 @@ document.write(`<br>O valor de ${x3} arredondado = ${Math.ceil(x3)}`)
 
 document.write(`<br>O valor de ${x3} arredondado = ${Math.floor(x3)}`)*/
 
-//random() - gerar numeros aleatórios entre 0 e 1(não incluso) ----------------------
+//!random() - gerar numeros aleatórios entre 0 e 1(não incluso) ----------------------
 
 
 // document.write(`<br>O numero aleatório é ${Math.random()}`)
