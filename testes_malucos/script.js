@@ -83,14 +83,31 @@
 // console.log(vogalqtd)
 
 
+// function contarVogais(frase){
+//     let vogais = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+//     let qtdVogais = 0
+//     for(let i = 0; i < 10; i++){
+//         for(let j = 0; j < frase.length; j++){
+//             if(frase[i] == vogais[j]){
+//                 qtdVogais++
+//             }
+//         }
+//     }
+//     return qtdVogais
+// }
+// let frase = 'ola mundo'
+// let qtdVogal = contarVogais(frase)
+// console.log(qtdVogal)
+
+
+
+
 function contarVogais(frase){
-    let vogais = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+    let vogais = 'aeiouAEIOU'
     let qtdVogais = 0
-    for(let i = 0; i < 10; i++){
-        for(let j = 0; j < frase.length; j++){
-            if(frase[i] == vogais[j]){
-                qtdVogais++
-            }
+    for(let i = 0; i < vogais.length; i++){
+        if(vogais.includes(frase[i])){
+            qtdVogais++
         }
     }
     return qtdVogais
