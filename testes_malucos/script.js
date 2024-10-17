@@ -1,8 +1,8 @@
-var a = [2,4,6];
-var pares = a.every( function(num){
-    return num % 2 == 0;
-})
-console.log(pares);
+// var a = [2,4,6];
+// var pares = a.every( function(num){
+//     return num % 2 == 0;
+// })
+// console.log(pares);
 
 
 
@@ -39,18 +39,45 @@ console.log(pares);
 // alert("Voce gastou R$"+totalPrecoGasto);
 
 
-let morrer = function(vida, dano){
-    if(dano >= vida){
-        return true;
-    } else{
-        return false;
+// let morrer = function(vida, dano){
+//     if(dano >= vida){
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
+// let dano = 99;
+// let vida = 100;
+// let morte = morrer(vida, dano);
+// if(morte){
+//     console.log('morreu');
+// } else{
+//     console.log('viveu');
+// }
+
+
+
+function contarVogais(frase){
+    let qtdVogais = 0;
+    let tamanho = frase.length
+    for(let i = 0; i < tamanho; i++){
+        switch(frase[i]){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                qtdVogais++;
+                break
+        }
     }
+    return qtdVogais
 }
-let dano = 99;
-let vida = 100;
-let morte = morrer(vida, dano);
-if(morte){
-    console.log('morreu');
-} else{
-    console.log('viveu');
-}
+let frase = 'Ola'
+let vogalqtd = contarVogais(frase)
+console.log(vogalqtd)
