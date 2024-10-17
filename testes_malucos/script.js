@@ -57,27 +57,44 @@
 
 
 
+// function contarVogais(frase){
+//     let qtdVogais = 0;
+//     let tamanho = frase.length
+//     for(let i = 0; i < tamanho; i++){
+//         switch(frase[i]){
+//             case 'a':
+//             case 'e':
+//             case 'i':
+//             case 'o':
+//             case 'u':
+//             case 'A':
+//             case 'E':
+//             case 'I':
+//             case 'O':
+//             case 'U':
+//                 qtdVogais++;
+//                 break
+//         }
+//     }
+//     return qtdVogais
+// }
+// let frase = 'Ola'
+// let vogalqtd = contarVogais(frase)
+// console.log(vogalqtd)
+
+
 function contarVogais(frase){
-    let qtdVogais = 0;
-    let tamanho = frase.length
-    for(let i = 0; i < tamanho; i++){
-        switch(frase[i]){
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-            case 'A':
-            case 'E':
-            case 'I':
-            case 'O':
-            case 'U':
-                qtdVogais++;
-                break
+    let vogais = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+    let qtdVogais = 0
+    for(let i = 0; i < 10; i++){
+        for(let j = 0; j < frase.length; j++){
+            if(frase[i] == vogais[j]){
+                qtdVogais++
+            }
         }
     }
     return qtdVogais
 }
-let frase = 'Ola'
-let vogalqtd = contarVogais(frase)
-console.log(vogalqtd)
+let frase = 'ola mundo'
+let qtdVogal = contarVogais(frase)
+console.log(qtdVogal)
