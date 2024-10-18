@@ -102,16 +102,36 @@
 
 
 
-function contarVogais(frase){
-    let vogais = 'aeiouAEIOU'
-    let qtdVogais = 0
-    for(let i = 0; i < vogais.length; i++){
-        if(vogais.includes(frase[i])){
-            qtdVogais++
-        }
-    }
-    return qtdVogais
+// function contarVogais(frase){
+//     let vogais = 'aeiouAEIOU'
+//     let qtdVogais = 0
+//     for(let i = 0; i < vogais.length; i++){
+//         if(vogais.includes(frase[i])){
+//             qtdVogais++
+//         }
+//     }
+//     return qtdVogais
+// }
+// let frase = 'ola mundo'
+// let qtdVogal = contarVogais(frase)
+// console.log(qtdVogal)
+
+
+
+// let quilometros = +(prompt("Digite a quilometragem: "));
+let quilometros = 301;
+let preco = 0;
+switch(true){
+    case (quilometros <= 200):
+        preco = quilometros * 10;
+        break;
+    case (quilometros <= 400):
+        preco = quilometros * 8;
+        break;
+    case (quilometros > 400):
+        preco = quilometros * 6;
+        break;
+    default:
+        console.log('Quilometragem invalida.');
 }
-let frase = 'ola mundo'
-let qtdVogal = contarVogais(frase)
-console.log(qtdVogal)
+console.log(`Preco a pagar por ${quilometros}KM: R$${preco}`);
