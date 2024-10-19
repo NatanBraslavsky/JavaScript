@@ -139,13 +139,23 @@
 
 
 
-function contarVogais(string){
-    let qtd = 0
-    for(let i = 0; i < string.length; i++){
-        qtd++;
-    }
-    return qtd
+// function contarVogais(string){
+//     let qtd = 0
+//     for(let i = 0; i < string.length; i++){
+//         qtd++;
+//     }
+//     return qtd
+// }
+// let frase = 'ola mundo'
+// let qtdCaracter = contarVogais(frase)
+// console.log(qtdCaracter)
+
+
+
+let frase = 'ola natan'
+frase = frase.split(' ')
+let tamanhoVetor = frase.length
+for(let i = 0; i < tamanhoVetor; i++){
+    frase[i] = frase[i].charAt(0).toUpperCase() + frase[i].slice(1)
 }
-let frase = 'ola mundo'
-let qtdCaracter = contarVogais(frase)
-console.log(qtdCaracter)
+console.log(frase.join(' '))
