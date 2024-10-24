@@ -162,19 +162,35 @@
 
 
 //[4,3,2,5]
-function ordenar(array){
-    let temp = 0
-    for(let i = 0; i < array.length; i++){
-        for(let j = 0; j < array.length; j++){
-            if(array[i] < array[j]){
-                temp = array[i]
-                array[i] = array[j]
-                array[j] = temp
-            }
-        }
+// function ordenar(array){
+//     let temp = 0
+//     for(let i = 0; i < array.length; i++){
+//         for(let j = 0; j < array.length; j++){
+//             if(array[i] < array[j]){
+//                 temp = array[i]
+//                 array[i] = array[j]
+//                 array[j] = temp
+//             }
+//         }
+//     }
+//     return array
+// }
+// let array = [7,5,6,4,5,3,8,5,22]
+// array = ordenar(array)
+// console.log(array)
+
+
+
+
+// Função de Fatorial:
+// Implemente uma função chamada fatorial que receba um número inteiro n e retorne o fatorial de n (n!).
+
+var n = +(prompt('Digite um número'))
+function fatorial(x) {
+    let fat = 1
+    for(var i = x; i > 0; i--){
+        fat *= i
     }
-    return array
+    return fat
 }
-let array = [7,5,6,4,5,3,8,5,22]
-array = ordenar(array)
-console.log(array)
+document.write(`O fatorial de ${n} é ${fatorial(n)}`)
