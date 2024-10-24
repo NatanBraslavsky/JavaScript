@@ -70,19 +70,41 @@
 
 
 
-let distancia = +(prompt('Digite a distância em quilômetros: '))
-let custo
-switch(true){
-	case (distancia <= 100):
-		custo = distancia * 10
-		break
-	case (distancia > 100 && distancia <= 300):
-		custo = distancia * 8
-		break
-	case(distancia > 300):
-		custo = distancia * 5
-		break
-	default:
-		console.log('Quilômetragem inválida.')
+// let distancia = +(prompt('Digite a distância em quilômetros: '))
+// let custo
+// switch(true){
+// 	case (distancia <= 100):
+// 		custo = distancia * 10
+// 		break
+// 	case (distancia > 100 && distancia <= 300):
+// 		custo = distancia * 8
+// 		break
+// 	case(distancia > 300):
+// 		custo = distancia * 5
+// 		break
+// 	default:
+// 		console.log('Quilômetragem inválida.')
+// }
+// alert(`O custo de envio é de R$ ${custo}`)
+
+
+
+
+function contarVogal(frase){
+	let qtdVogal = 0
+	let tamanhoFrase = frase.length
+	let vogais = 'aeiouAEIOU'
+	if(tamanhoFrase === 0){
+		return 0;
+	} else{
+		for(let i = 0; i < tamanhoFrase; i++){
+			if(vogais.includes(frase[i])){
+				qtdVogal++
+			}
+		}
+	}
+	return qtdVogal;
 }
-alert(`O custo de envio é de R$ ${custo}`)
+let frase = prompt('Digite uma frase: ');
+let qtdVog = contarVogal(frase)
+alert(`Quantidade de vogais: ${qtdVog}`)
