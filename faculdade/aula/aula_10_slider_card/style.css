@@ -1,0 +1,45 @@
+#dvSlider{
+    width: 1000px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+.btn{
+    width: 50px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(255, 91, 91);
+    color: white;
+    font-weight: 100;
+}
+
+.card{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-title{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+
