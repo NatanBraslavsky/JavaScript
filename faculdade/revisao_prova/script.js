@@ -90,21 +90,29 @@
 
 
 
-function contarVogal(frase){
-	let qtdVogal = 0
-	let tamanhoFrase = frase.length
-	let vogais = 'aeiouAEIOU'
-	if(tamanhoFrase === 0){
-		return 0;
-	} else{
-		for(let i = 0; i < tamanhoFrase; i++){
-			if(vogais.includes(frase[i])){
-				qtdVogal++
-			}
-		}
-	}
-	return qtdVogal;
-}
-let frase = prompt('Digite uma frase: ');
-let qtdVog = contarVogal(frase)
-alert(`Quantidade de vogais: ${qtdVog}`)
+// function contarVogal(frase){
+// 	let qtdVogal = 0
+// 	let tamanhoFrase = frase.length
+// 	let vogais = 'aeiouAEIOU'
+// 	if(tamanhoFrase === 0){
+// 		return 0;
+// 	} else{
+// 		for(let i = 0; i < tamanhoFrase; i++){
+// 			if(vogais.includes(frase[i])){
+// 				qtdVogal++
+// 			}
+// 		}
+// 	}
+// 	return qtdVogal;
+// }
+// let frase = prompt('Digite uma frase: ');
+// let qtdVog = contarVogal(frase)
+// alert(`Quantidade de vogais: ${qtdVog}`)
+
+let lista = document.getElementById('minhaLista');
+
+document.getElementById('adicionarLista').addEventListener('click', function () {
+    let elemento = document.createElement('li');
+    elemento.textContent = 'novo item';
+    lista.appendChild(elemento);
+});
