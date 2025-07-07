@@ -25,8 +25,12 @@
         // d.style.backgroundColor = 'green'
         // d.innerText = 'Estou aguardando...'
 
-        var d = window.document.querySelector('div#msg')
+        var d = window.document.querySelector('div#msg')        
         d.style.color = 'blue'
+
+        d.addEventListener("click", function(){
+            d.style.color = 'red'
+        })
     </script>
 </body>
 </html>

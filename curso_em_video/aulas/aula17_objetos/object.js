@@ -1,4 +1,5 @@
-let amigo = {nome: 'José', 
+let amigo = {
+    nome: 'José', 
     sexo: 'M', 
     peso: 85.4, 
     engordar(p){
