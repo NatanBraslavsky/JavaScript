@@ -176,3 +176,8 @@ document.write(`<br>O valor de ${x3} arredondado = ${Math.floor(x3)}`)*/
 // var numero = aleatorio(minimo, maximo)
 // document.write(`Número aleatório gerado entre ${minimo} e ${maximo}: ${numero}`)
 
+
+
+alert(`A soma dos valores = ${a}`)
+document.write(`<br>A soma dos valores = ${a}`)
+console.log(`A soma dos valores = ${a}`)
