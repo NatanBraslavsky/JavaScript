@@ -9,5 +9,10 @@ setInterval(() =>{
     console.log('setinterval')
 }, 1000)
 
+
 window.document.querySelectorAll('button')
-.forEach()
+.forEach((btn, index)=>{
+    btn.addEventListener("click", ()=>{
+        console.log(btn.textContent)
+    })
+})
