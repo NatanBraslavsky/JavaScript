@@ -22,6 +22,7 @@ document.querySelector('#btnAdd').addEventListener('click', ()=>{
                 const task = document.querySelectorAll('.tarefas');task[i].classList.toggle('feito')
             }
         }
+        document.querySelector('#inputAdd').value = ''
     }
 });
 
