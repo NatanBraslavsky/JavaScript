@@ -13,6 +13,6 @@ setInterval(() =>{
 window.document.querySelectorAll('button')
 .forEach((btn, index)=>{
     btn.addEventListener("click", ()=>{
-        console.log(btn.textContent)
+        console.log(btn.style.background='red')
     })
 })
