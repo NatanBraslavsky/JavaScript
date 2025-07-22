@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/pages/create.css">
+    <link rel="stylesheet" href="styles/components/checkbox.css">
+</head>
+<body>  
+    <div class="containerForm">
+        <div class="conteudosContainer">
+            <div class="containerTexts">
+                <h1 class="titleForm">Criar uma conta</h1>
+                <p class="loginText">Já tem uma conta? <a class="loginPage" href="login.html">Login</a></p>
+            </div>
+            <form class="form">
+                <div class="containerFirstLast">
+                    <input type="text" class="FirstNameInput" placeholder="Primeiro nome">
+                    <input type="text" class="lastNameInput" placeholder="Último nome">
+                </div>
+                <input type="email" class="emailInput" placeholder="Email">
+                <input type="password" class="passwordInput" placeholder="Senha">
+            </form>
+            <div class="checkAgree">
+                <div class="checkbox-wrapper-42">
+                    <input id="cbx-42" type="checkbox" />
+                    <label class="cbx" for="cbx-42"></label>
+                </div>
+                <p id="txtTerms">Eu concordo com os <a href="#" class="termosCondicoesLink">termos e condições</a></p>
+            </div>
+        </div>
+        <button class="btnCreate">Criar conta</button>
+    </div>
+    <script src="scripts/global.js"></script>
+</body>
+</html>

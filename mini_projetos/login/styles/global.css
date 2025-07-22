@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor: #2C2638;
+    --fieldColor: #3C364C;
+    --textColor: #F8F7F8;
+    --placeHolderColor: #7E788E;
+    --btnColor:#6D54B5;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
