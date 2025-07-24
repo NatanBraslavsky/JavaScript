@@ -59,7 +59,7 @@ body{
     width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 17.775px;
 }
 
 .containerFirstLast{
@@ -70,6 +70,7 @@ body{
 
 .firstNameInputErrorContainer{
     width: 50%;
+    position: relative;
 }
 
 .lastNameInputErrorContainer{
@@ -82,6 +83,14 @@ body{
 
 .lastNameInput{
     width: 100%;
+}
+
+.errorName{
+    position: absolute;
+    bottom: -13.775px;
+    left: 12px;
+    font-size: 10.775px;
+    color: rgb(246, 69, 69);
 }
 
 @media(max-width:560px){
@@ -124,4 +133,13 @@ body{
     width: 100%;
     height: 45px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.btnCreate:hover{
+    cursor: pointer;
+}
+
