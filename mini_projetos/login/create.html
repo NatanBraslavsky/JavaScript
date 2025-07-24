@@ -17,8 +17,14 @@
             </div>
             <form class="form">
                 <div class="containerFirstLast">
-                    <input type="text" class="FirstNameInput" placeholder="Primeiro nome">
-                    <input type="text" class="lastNameInput" placeholder="Último nome">
+                    <div class="firstNameInputErrorContainer">
+                        <input type="text" class="FirstNameInput" placeholder="Primeiro nome">
+                        <span class="errorName"></span>
+                    </div>
+                    <div class="lastNameInputErrorContainer">
+                        <input type="text" class="lastNameInput" placeholder="Último nome">
+                        <span class="errorName"></span>
+                    </div>
                 </div>
                 <input type="email" class="emailInput" placeholder="Email">
                 <input type="password" class="passwordInput" placeholder="Senha">

@@ -68,12 +68,20 @@ body{
     gap: 10px;
 }
 
-.FirstNameInput{
+.firstNameInputErrorContainer{
     width: 50%;
 }
 
-.lastNameInput{
+.lastNameInputErrorContainer{
     width: 50%;
+}
+
+.FirstNameInput{
+    width: 100%;
+}
+
+.lastNameInput{
+    width: 100%;
 }
 
 @media(max-width:560px){
