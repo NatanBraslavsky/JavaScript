@@ -121,12 +121,20 @@
 // document.write(`Maior número no vetor: ${maior(vetor)}`)
 
 
-var n = +(prompt('Digite um número'))
-function fatorial(x) {
-    let fat = 1
-    for(var i = x; i > 0; i--){
-        fat *= i
-    }
-    return fat
+// var n = +(prompt('Digite um número'))
+// function fatorial(x) {
+//     let fat = 1
+//     for(var i = x; i > 0; i--){
+//         fat *= i
+//     }
+//     return fat
+// }
+// document.write(`O fatorial de ${n} é ${fatorial(n)}`)
+
+var str = prompt('Digite seu nome')
+function palindromo(nome) {
+    let string = nome.toLowerCase();
+    let invert = string.split('').reverse().join('');
+    return string === invert
 }
-document.write(`O fatorial de ${n} é ${fatorial(n)}`)
+document.write(palindromo(str))
