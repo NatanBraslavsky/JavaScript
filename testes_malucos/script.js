@@ -214,11 +214,21 @@
 // console.log(array)
 
 
+// let frase = 'ola natan'
+// frase = frase.split(' ')
+// let tamanhoVetor = frase.length
+// for(let i = 0; i < tamanhoVetor; i++){
+//     frase[i] = frase[i].charAt(0).toUpperCase() + frase[i].slice(1)
+// }
+// console.log(frase.join(' '))
 
-let frase = 'ola natan'
-frase = frase.split(' ')
-let tamanhoVetor = frase.length
-for(let i = 0; i < tamanhoVetor; i++){
-    frase[i] = frase[i].charAt(0).toUpperCase() + frase[i].slice(1)
+
+var n = +(prompt('Digite um número'))
+function fatorial(x) {
+    let fat = 1
+    for(var i = x; i > 0; i--){
+        fat *= i
+    }
+    return fat
 }
-console.log(frase.join(' '))
+document.write(`O fatorial de ${n} é ${fatorial(n)}`)
