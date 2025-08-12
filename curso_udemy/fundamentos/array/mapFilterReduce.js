@@ -15,3 +15,14 @@ console.log(arrayVz2)
 
 //?reduce
 lista = [1,2,3,4,5,6]
+somaLista = lista.reduce((acumulador, valor)=>{
+    return acumulador + valor
+})
+
+console.log(somaLista)
+
+//?tudo junto
+
+numParDobrado = num.filter(num=>num % 2 === 0).map(num=>num * 2).reduce((acumulador, valor) => acumulador + valor)
+
+console.log(numParDobrado);
