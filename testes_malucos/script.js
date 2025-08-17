@@ -223,12 +223,18 @@
 // console.log(frase.join(' '))
 
 
-var n = +(prompt('Digite um número'))
-function fatorial(x) {
-    let fat = 1
-    for(var i = x; i > 0; i--){
-        fat *= i
-    }
-    return fat
-}
-document.write(`O fatorial de ${n} é ${fatorial(n)}`)
+// var n = +(prompt('Digite um número'))
+// function fatorial(x) {
+//     let fat = 1
+//     for(var i = x; i > 0; i--){
+//         fat *= i
+//     }
+//     return fat
+// }
+// document.write(`O fatorial de ${n} é ${fatorial(n)}`)
+
+let segundo = 0
+setInterval(() => {
+    segundo+=1
+    console.log(segundo)
+}, 1000)
