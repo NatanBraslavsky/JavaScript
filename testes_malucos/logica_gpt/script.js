@@ -96,5 +96,54 @@ Dada uma matriz 0/1 (0 = caminho livre, 1 = parede), descubra se há um caminho 
 // let a = 528;
 // console.log(paresNumero(a));
 
-//? 2-1
+//? 2-4
+// function primos(a, b){
+//     let valoresPrimos = [];
+//     let divisores;
+//     for(let i = a; i <= b; i++){
+//         divisores = 0;
+//         for(let j = 1; j <= i; j++){
+//             if(i % j == 0){
+//                 divisores++;
+//             }
+//         }
+//         if(divisores == 2) {
+//             valoresPrimos.push(i)
+//         };
+//     }
+//     return valoresPrimos;
+// } 
 
+// let [inicio, fim] = [1, 9];
+// let valoresPrimos = primos(inicio, fim)
+// console.log(valoresPrimos);
+
+//?2-5
+// function somaMult_3ou5(n){
+//     let multiplos_3ou5 = []
+//     for(let i = 1; i <= n; i++){
+//         if(i % 3 == 0 || i % 5 == 0) {
+//             multiplos_3ou5.push(i)
+//         };
+//     }
+//     let soma = multiplos_3ou5.reduce((acumulador, valor) => {
+//         return acumulador + valor;
+//     })
+//     return soma;
+// }
+
+// let limite = 50;
+// let soma = somaMult_3ou5(limite);
+// console.log(soma);
+
+//?2-6
+// function inverso(num){
+//     let numString = num.toString();
+//     let inverso = numString.split('').reverse().join('');
+//     return Number(inverso);
+// }  
+
+// let numero = 523;
+// console.log(inverso(numero))
+
+//?3-7
