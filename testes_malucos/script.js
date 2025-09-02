@@ -233,8 +233,13 @@
 // }
 // document.write(`O fatorial de ${n} é ${fatorial(n)}`)
 
-let segundo = 0
-setInterval(() => {
-    segundo+=1
-    console.log(segundo)
-}, 1000)
+// let segundo = 0
+// setInterval(() => {
+//     segundo+=1
+//     console.log(segundo)
+// }, 1000)
+
+console.log('A');
+setTimeout(() => console.log('B'), 0);
+Promise.resolve().then(() => console.log('C'));
+console.log('D');
