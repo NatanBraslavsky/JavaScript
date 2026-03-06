@@ -1,0 +1,17 @@
+.light{
+    background-color: white;
+    button{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
+.dark{
+    background-color: black;
+    button{
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+    }
+}
